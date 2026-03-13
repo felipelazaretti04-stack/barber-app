@@ -48,30 +48,23 @@ export const services: Service[] = [
 export const barbers: Barber[] = [
   {
     id: '1',
-    name: 'Carlos Silva',
+    name: 'Leo Barber',
     specialty: 'Cortes Clássicos e Degradê',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?w=150&h=150&fit=crop',
     rating: 4.9,
   },
   {
     id: '2',
-    name: 'Rafael Santos',
+    name: 'Seco',
     specialty: 'Barba e Pigmentação',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?w=150&h=150&fit=crop',
     rating: 4.8,
   },
   {
     id: '3',
-    name: 'Lucas Oliveira',
+    name: 'Gustavo',
     specialty: 'Cortes Modernos e Desenhos',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
-    rating: 4.7,
-  },
-  {
-    id: '4',
-    name: 'Fernando Costa',
-    specialty: 'Especialista em Barba',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?w=150&h=150&fit=crop',
     rating: 4.9,
   },
 ];

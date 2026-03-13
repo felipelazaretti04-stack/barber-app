@@ -1,7 +1,18 @@
 import { services } from '../data/mock';
 import { Service } from '../types/app';
+import { fetchAllServices } from './supabase-services';
 
-export function getAllServices(): Service[] {
+export async function getAllServices(): Promise<Service[]> {
+  try {
+    const supabaseServices = await fetchAllServices();
+    return supabaseServices.length > 0 ? supabaseServices : services;
+  } catch (error) {
+    console.error('Error loading services, using mock data:', error);
+    return services;
+  }
+}
+
+export function getAllServicesSync(): Service[] {
   return services;
 }
 

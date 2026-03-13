@@ -1,28 +1,36 @@
 export const colors = {
-  // Cores principais
-  primary: '#C9A227', // Dourado elegante
-  primaryLight: '#E5C158',
-  primaryDark: '#9A7B1E',
-  
-  // Background
-  background: '#0D0D0D',
-  backgroundLight: '#1A1A1A',
-  backgroundCard: '#252525',
-  
-  // Texto
-  textPrimary: '#FFFFFF',
-  textSecondary: '#A0A0A0',
-  textMuted: '#666666',
-  
+  // Navy Premium Palette
+  background: '#0F172A',
+  backgroundLight: '#1E293B',
+  backgroundCard: '#1E293B',
+  surface: '#1E293B',
+
+  // Primary
+  primary: '#3B82F6',
+  primaryHover: '#2563EB',
+  primaryLight: '#60A5FA',
+  primaryDark: '#1D4ED8',
+
+  // Text
+  textPrimary: '#F8FAFC',
+  textSecondary: '#CBD5E1',
+  textMuted: '#94A3B8',
+
   // Status
   success: '#22C55E',
+  successLight: '#4ADE80',
   warning: '#F59E0B',
+  warningLight: '#FBBF24',
   error: '#EF4444',
+  errorLight: '#F87171',
   info: '#3B82F6',
-  
-  // Borda
-  border: '#333333',
-  borderLight: '#404040',
+
+  // Border
+  border: '#334155',
+  borderLight: '#475569',
+
+  // Legacy (manter compatibilidade)
+  backgroundDark: '#0F172A',
 };
 
 export const spacing = {
@@ -32,13 +40,16 @@ export const spacing = {
   lg: 24,
   xl: 32,
   xxl: 48,
+  xxxl: 64,
 };
 
 export const borderRadius = {
+  xs: 4,
   sm: 8,
   md: 12,
   lg: 16,
-  xl: 24,
+  xl: 20,
+  xxl: 24,
   full: 9999,
 };
 
@@ -50,6 +61,7 @@ export const fontSize = {
   xl: 20,
   xxl: 24,
   xxxl: 32,
+  xxxxl: 40,
 };
 
 export const fontWeight = {
@@ -57,30 +69,45 @@ export const fontWeight = {
   medium: '500' as const,
   semibold: '600' as const,
   bold: '700' as const,
+  extrabold: '800' as const,
 };
 
 export const shadows = {
   sm: {
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.05,
     shadowRadius: 2,
     elevation: 2,
   },
   md: {
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 4,
   },
   lg: {
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
+    shadowOpacity: 0.15,
     shadowRadius: 8,
     elevation: 8,
   },
+  xl: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.2,
+    shadowRadius: 16,
+    elevation: 12,
+  },
+};
+
+export const breakpoints = {
+  mobile: 0,
+  tablet: 768,
+  desktop: 1024,
+  wide: 1280,
 };
 
 export const theme = {
@@ -90,6 +117,7 @@ export const theme = {
   fontSize,
   fontWeight,
   shadows,
+  breakpoints,
 };
 
 export default theme;
