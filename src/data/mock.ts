@@ -1,0 +1,177 @@
+import { Service, Barber, Customer, Appointment } from '../types/app';
+
+export const services: Service[] = [
+  {
+    id: '1',
+    name: 'Corte Clássico',
+    description: 'Corte tradicional com máquina e tesoura',
+    duration: 30,
+    price: 45,
+  },
+  {
+    id: '2',
+    name: 'Corte + Barba',
+    description: 'Corte completo com barba modelada',
+    duration: 50,
+    price: 70,
+  },
+  {
+    id: '3',
+    name: 'Barba Completa',
+    description: 'Barba com navalha, toalha quente e hidratação',
+    duration: 30,
+    price: 40,
+  },
+  {
+    id: '4',
+    name: 'Corte Degradê',
+    description: 'Degradê perfeito com acabamento na navalha',
+    duration: 40,
+    price: 55,
+  },
+  {
+    id: '5',
+    name: 'Combo Premium',
+    description: 'Corte + Barba + Sobrancelha + Hidratação',
+    duration: 75,
+    price: 100,
+  },
+  {
+    id: '6',
+    name: 'Pigmentação',
+    description: 'Pigmentação para cabelo ou barba',
+    duration: 45,
+    price: 60,
+  },
+];
+
+export const barbers: Barber[] = [
+  {
+    id: '1',
+    name: 'Carlos Silva',
+    specialty: 'Cortes Clássicos e Degradê',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    rating: 4.9,
+  },
+  {
+    id: '2',
+    name: 'Rafael Santos',
+    specialty: 'Barba e Pigmentação',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.8,
+  },
+  {
+    id: '3',
+    name: 'Lucas Oliveira',
+    specialty: 'Cortes Modernos e Desenhos',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.7,
+  },
+  {
+    id: '4',
+    name: 'Fernando Costa',
+    specialty: 'Especialista em Barba',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face',
+    rating: 4.9,
+  },
+];
+
+export const customers: Customer[] = [
+  { id: '1', name: 'João Pedro', phone: '(11) 99999-1111', createdAt: new Date('2024-01-15') },
+  { id: '2', name: 'Marcos Almeida', phone: '(11) 99999-2222', createdAt: new Date('2024-01-20') },
+  { id: '3', name: 'André Souza', phone: '(11) 99999-3333', createdAt: new Date('2024-02-01') },
+  { id: '4', name: 'Ricardo Lima', phone: '(11) 99999-4444', createdAt: new Date('2024-02-10') },
+  { id: '5', name: 'Felipe Mendes', phone: '(11) 99999-5555', createdAt: new Date('2024-02-15') },
+  { id: '6', name: 'Bruno Carvalho', phone: '(11) 99999-6666', createdAt: new Date('2024-03-01') },
+  { id: '7', name: 'Gabriel Santos', phone: '(11) 99999-7777', createdAt: new Date('2024-03-05') },
+  { id: '8', name: 'Thiago Ribeiro', phone: '(11) 99999-8888', createdAt: new Date('2024-03-10') },
+];
+
+export const appointments: Appointment[] = [
+  {
+    id: '1',
+    service: services[0],
+    barber: barbers[0],
+    customer: customers[0],
+    date: '2024-03-13',
+    time: '09:00',
+    status: 'confirmado',
+    createdAt: new Date('2024-03-12'),
+  },
+  {
+    id: '2',
+    service: services[1],
+    barber: barbers[1],
+    customer: customers[1],
+    date: '2024-03-13',
+    time: '10:00',
+    status: 'confirmado',
+    createdAt: new Date('2024-03-12'),
+  },
+  {
+    id: '3',
+    service: services[4],
+    barber: barbers[2],
+    customer: customers[2],
+    date: '2024-03-13',
+    time: '11:00',
+    status: 'confirmado',
+    createdAt: new Date('2024-03-11'),
+  },
+  {
+    id: '4',
+    service: services[2],
+    barber: barbers[3],
+    customer: customers[3],
+    date: '2024-03-12',
+    time: '14:00',
+    status: 'concluido',
+    createdAt: new Date('2024-03-10'),
+  },
+  {
+    id: '5',
+    service: services[3],
+    barber: barbers[0],
+    customer: customers[4],
+    date: '2024-03-12',
+    time: '15:00',
+    status: 'concluido',
+    createdAt: new Date('2024-03-10'),
+  },
+  {
+    id: '6',
+    service: services[1],
+    barber: barbers[1],
+    customer: customers[5],
+    date: '2024-03-11',
+    time: '09:00',
+    status: 'concluido',
+    createdAt: new Date('2024-03-09'),
+  },
+  {
+    id: '7',
+    service: services[0],
+    barber: barbers[2],
+    customer: customers[6],
+    date: '2024-03-11',
+    time: '16:00',
+    status: 'cancelado',
+    createdAt: new Date('2024-03-08'),
+  },
+  {
+    id: '8',
+    service: services[4],
+    barber: barbers[3],
+    customer: customers[7],
+    date: '2024-03-10',
+    time: '10:00',
+    status: 'concluido',
+    createdAt: new Date('2024-03-07'),
+  },
+];
+
+export const timeSlots = [
+  '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
+  '14:00', '14:30', '15:00', '15:30', '16:00', '16:30',
+  '17:00', '17:30', '18:00', '18:30', '19:00', '19:30',
+];
